@@ -7,7 +7,7 @@ IF "%TEMP%"=="" (
 
 echo Скачивание последней версии локализации...
 powershell.exe -Command "Invoke-WebRequest -OutFile %TEMP%/master.zip https://github.com/Ludeon/RimWorld-ru/archive/master.zip" >> nul
-powershell.exe "Add-Type -A 'System.IO.Compression.FileSystem';[IO.Compression.ZipFile]::ExtractToDirectory('master.zip', '%TEMP%');" > nul
+powershell.exe "Add-Type -A 'System.IO.Compression.FileSystem';[IO.Compression.ZipFile]::ExtractToDirectory(''%TEMP%/master.zip', '%TEMP%');" > nul
 cls
 
 echo Удаление существующей локализации...

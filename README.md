@@ -1,4 +1,6 @@
 # RimWorldRuslangAutoUpdater
+![GitHub all releases](https://img.shields.io/github/downloads/asidsx/RimWorldRuslangAutoUpdater/total)
+
 # Руководство пользователя: Обновление русской локализации игры
 
 Этот репозиторий содержит скрипты для обновления русской локализации игры.

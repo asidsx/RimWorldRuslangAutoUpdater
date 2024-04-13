@@ -19,16 +19,18 @@ del /F /Q "Data\Ideology\Languages\Russian (Русский).tar" >> nul
 rd /S /Q "Data\Ideology\Languages\Russian (Русский)\" >> nul
 del /F /Q "Data\Biotech\Languages\Russian (Русский).tar" >> nul
 rd /S /Q "Data\Biotech\Languages\Russian (Русский)\" >> nul
-cls
+del /F /Q "Data\Anomaly\Languages\Russian (Русский).tar" >> nul
+rd /S /Q "Data\Anomaly\Languages\Russian (Русский)\" >> nul
 
 echo Распаковка обновлённой локализации...
 xcopy "%TEMP%\RimWorld-ru-master\Core" "Data\Core\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 xcopy "%TEMP%\RimWorld-ru-master\Royalty" "Data\Royalty\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 xcopy "%TEMP%\RimWorld-ru-master\Ideology" "Data\Ideology\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 xcopy "%TEMP%\RimWorld-ru-master\Biotech" "Data\Biotech\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
-cls
+xcopy "%TEMP%\RimWorld-ru-master\Anomaly" "Data\Anomaly\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 
 echo Удаление оставшихся файлов...
 del /F /Q "%TEMP%\master.zip" >> nul
 rd /S /Q "%TEMP%\RimWorld-ru-master" >> nul
-exit
+
+pause

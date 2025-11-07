@@ -21,6 +21,8 @@ del /F /Q "%~dp0Data\Biotech\Languages\Russian (Русский).tar" >> nul
 rd /S /Q "%~dp0Data\Biotech\Languages\Russian (Русский)\" >> nul
 del /F /Q "%~dp0Data\Anomaly\Languages\Russian (Русский).tar" >> nul
 rd /S /Q "%~dp0Data\Anomaly\Languages\Russian (Русский)\" >> nul
+del /F /Q "%~dp0Data\Odyssey\Languages\Russian (Русский).tar" >> nul
+rd /S /Q "%~dp0Data\Odyssey\Languages\Russian (Русский)\" >> nul
 
 echo Распаковка обновлённой локализации...
 xcopy "%TEMP%\RimWorld-ru-master\Core" "%~dp0Data\Core\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
@@ -28,9 +30,11 @@ xcopy "%TEMP%\RimWorld-ru-master\Royalty" "%~dp0Data\Royalty\Languages\Russian (
 xcopy "%TEMP%\RimWorld-ru-master\Ideology" "%~dp0Data\Ideology\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 xcopy "%TEMP%\RimWorld-ru-master\Biotech" "%~dp0Data\Biotech\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 xcopy "%TEMP%\RimWorld-ru-master\Anomaly" "%~dp0Data\Anomaly\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
+xcopy "%TEMP%\RimWorld-ru-master\Odyssey" "%~dp0Data\Odyssey\Languages\Russian (Русский)\"  /H /Y /C /R /S >> nul
 
 echo Удаление оставшихся файлов...
 del /F /Q "%TEMP%\master.zip" >> nul
 rd /S /Q "%TEMP%\RimWorld-ru-master" >> nul
 
 pause
+
